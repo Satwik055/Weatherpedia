@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Weatherpedia</string>
+    <string name="test_api">temprature</string>
 </resources>

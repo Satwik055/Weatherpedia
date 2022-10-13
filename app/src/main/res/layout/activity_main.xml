@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:openDrawer="end">
+    tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
@@ -17,7 +17,9 @@
         app:itemIconTint="@color/text_color"
         app:itemTextAppearance="@style/NavDrawer_Style"
         app:itemTextColor="@color/text_color"
-        app:menu="@menu/nav_drawer" />
+        app:menu="@menu/nav_drawer">
+
+    </com.google.android.material.navigation.NavigationView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,23 +29,24 @@
 
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView_weatherImage"
             android:layout_width="334dp"
             android:layout_height="315dp"
             android:layout_marginStart="38dp"
             android:layout_marginEnd="39dp"
             android:layout_marginBottom="45dp"
+            android:foregroundGravity="center"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/partly_cloudy" />
+            app:srcCompat="@drawable/ic_weather_clouds" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="353dp"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="13dp"
             android:layout_marginBottom="68dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -51,13 +54,13 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="210dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView_place"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/dm_sans_bold"
                     android:text="Moscow, Russia"
@@ -84,79 +87,121 @@
 
             </LinearLayout>
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginLeft="18dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="7dp"
-                    android:fontFamily="@font/dm_sans_medium"
-                    android:text="20:00"
-                    android:textColor="@color/text_color"
-                    android:textSize="16sp" />
+                android:layout_gravity="bottom">
 
                 <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="62dp"
-                    android:layout_height="60dp"
-                    android:foregroundGravity="center"
-                    app:srcCompat="@drawable/cloudy" />
-
-                <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/imageView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:fontFamily="@font/dm_sans_medium"
-                    android:foregroundGravity="center"
-                    android:text="32°"
-                    android:textColor="@color/text_color"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="7dp"
-                    android:fontFamily="@font/dm_sans_medium"
-                    android:text="15:00"
-                    android:textColor="@color/text_color"
-                    android:textSize="16sp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_rectangle_card" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="62dp"
-                    android:layout_height="60dp"
-                    android:foregroundGravity="center"
-                    app:srcCompat="@drawable/slight_touch_happyday" />
-
-                <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:fontFamily="@font/dm_sans_medium"
-                    android:foregroundGravity="center"
-                    android:text="30°"
-                    android:textColor="@color/text_color"
-                    android:textSize="16sp" />
+                    android:layout_marginEnd="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_rectangle_card" />
 
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4">
+
+                    <TextView
+                        android:id="@+id/textView_firstCard_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/dm_sans_medium"
+                        android:text="Wind"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_firstCard_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        app:srcCompat="@drawable/ic_wind" />
+
+                    <TextView
+                        android:id="@+id/textView_windSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/dm_sans_medium"
+                        android:foregroundGravity="center"
+                        android:text="32km/h"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                    app:layout_constraintStart_toStartOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView6">
+
+                    <TextView
+                        android:id="@+id/textView_secondCard_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/dm_sans_medium"
+                        android:text="Mosit"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_secondCard_icon"
+                        android:layout_width="45dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        app:srcCompat="@drawable/ic_moisture" />
+
+                    <TextView
+                        android:id="@+id/textView_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/dm_sans_medium"
+                        android:foregroundGravity="center"
+                        android:text="68%"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
@@ -176,7 +221,7 @@
 
             <TextView
                 android:id="@+id/textView_weather"
-                android:layout_width="wrap_content"
+                android:layout_width="290dp"
                 android:layout_height="44dp"
                 android:layout_gravity="center"
                 android:fontFamily="@font/dm_sans_medium"
@@ -187,16 +232,28 @@
 
             <ImageView
                 android:id="@+id/button_navdrawer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginLeft="180dp"
                 android:backgroundTint="@color/dark_bg"
-                android:foregroundGravity="bottom"
                 android:onClick="openNavDrawer"
                 app:srcCompat="@drawable/ic_button_navdrawer" />
 
         </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </FrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

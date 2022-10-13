@@ -2,22 +2,25 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/weather"
-        android:title="Weather" />
+        <item android:id="@+id/weather"
+            android:title="Weather"
+            android:icon="@drawable/ic_cloud"/>
 
-    <item android:id="@+id/settings"
-        android:title="Settings"
-        android:icon="@drawable/ic_settings" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
 
-    <item android:id="@+id/about"
-        android:icon="@drawable/ic_aboutus"
-        android:title="About"/>
+        <item android:id="@+id/about"
+            android:icon="@drawable/ic_aboutus"
+            android:title="About"/>
 
-    <item android:id="@+id/contactus"
-        android:icon="@drawable/ic_contactus"
-        android:title="Help"/>
+        <item android:id="@+id/contactus"
+            android:icon="@drawable/ic_contactus"
+            android:title="Help"/>
 
-    <item android:id="@+id/invite"
-        android:icon="@drawable/ic_invite"
-        android:title="Invite"/>
+        <item android:id="@+id/invite"
+            android:icon="@drawable/ic_invite"
+            android:title="Invite"/>
+
 </menu>

@@ -3,16 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/button.xml" value="0.2435" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_aboutus.xml" value="0.2575" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_button_navdrawer.xml" value="0.2575" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_cancel.xml" value="0.2575" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_contactus.xml" value="0.2575" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_invite.xml" value="0.2575" />
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_moisture.xml" value="0.279" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_navmenu_selector.xml" value="0.2575" />
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_recatangle_card.xml" value="0.2435" />
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_rectangle_card.xml" value="0.278" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_seperator.xml" value="0.2575" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_settings.xml" value="0.2575" />
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/ic_wind.xml" value="0.2435" />
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/drawable/test_card.xml" value="0.2435" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/layout/nav_drawer_header.xml" value="0.22" />
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/layout/activity_no_connection.xml" value="0.25" />
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/layout/fragment_about_us.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/layout/nav_drawer_header.xml" value="0.25" />
         <entry key="..\:/Users/Manish Kumar/Documents/Android Sudio/Weatherpedia/app/src/main/res/menu/nav_drawer.xml" value="0.27447916666666666" />
       </map>
     </option>

@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background">#1A1A1A</color>
     <color name="text_color">#FFFFFFFF</color>
+    <color name="card_color">#2B2B2B</color>
     <color name="status_bar_color_dark">#1A1A1A</color>
     <color name="dark_bg">#1A1A1A</color>
 </resources>
